@@ -1,0 +1,4 @@
+Task 1:
+
+- C++ functions to generate random:
+	https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/

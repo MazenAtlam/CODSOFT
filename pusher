@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo -e "\nEnter the commit message: "
+read message
+
+git add .
+git commit -m "${message}"
+
+echo -e "The token password is:\n"
+echo "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"
+
+git push

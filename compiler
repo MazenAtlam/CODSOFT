@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -e "\nEnter the file name: "
+read name
+
+g++ ${name}.cpp -o ${name}

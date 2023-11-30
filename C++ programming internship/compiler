@@ -2,4 +2,4 @@
 echo -e "\nEnter the file name: "
 read name
 
-g++ ${name}.cpp -o ${name}
+g++ *.cpp -o ${name}

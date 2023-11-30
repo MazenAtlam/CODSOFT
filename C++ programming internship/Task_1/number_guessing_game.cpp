@@ -17,13 +17,13 @@ using namespace std;
 int main(void)
 {
 	int n, rnum = MIN + (rand() % (MAX - MIN + 1));
-	bool first_guess, play_again;
+	bool first_guess, play_again = false;
 
+	cout << "Welcome to NUMBER GUESSING GAME" << endl;
 	do
 	{
 		first_guess = true;
-		cout << "Welcome to the number guessing game" << endl;
-		cout << "I have a number, try to guess it" << endl;
+		cout << "Let's go!\nI have a number, try to guess it" << endl;
 		cout << "Number range is [" << MIN << " : " << MAX << "]" << endl;
 		do
 		{
@@ -54,9 +54,9 @@ int main(void)
 			}
 		} while (n != rnum);
 		cout << "Congratulations, that's the right guess!" << endl;
-		cout << "Enter 0 if you want to play again or a non-zero value to exit: ";
+		cout << "Enter 0 if you want to exit or a non-zero value to play again: ";
 		cin >> play_again;
-	} while (!play_again);
+	} while (play_again);
 
 	return 0;
 }

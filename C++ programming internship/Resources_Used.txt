@@ -4,6 +4,10 @@ Task 1:
 - An Algorithm to make the function rand() get negative and positive numbers
 	https://www.sololearn.com/Discuss/1066086/how-can-i-generate-random-numbers-between-a-negative-and-positive-value
 
-Task2:
-- A function to print a float number with precision
+Task 2:
+- A function to print a float number with precision in C++
 	https://stackoverflow.com/questions/5907031/printing-the-correct-number-of-decimal-points-with-cout
+
+Task 3:
+- How to declare a global variable accross multiple C++ files
+	https://stackoverflow.com/questions/9702053/how-to-declare-a-global-variable-in-c

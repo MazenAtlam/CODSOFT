@@ -16,8 +16,8 @@ using namespace std;
  */
 int main(void)
 {
-	int n, rnum = MIN + (rand() % (MAX - MIN + 1));
-	bool first_guess, play_again = false;
+	int n, rnum = MIN + (rand() % (MAX - MIN + 1)), play_again = 0;
+	bool first_guess;
 
 	cout << "Welcome to NUMBER GUESSING GAME" << endl;
 	do

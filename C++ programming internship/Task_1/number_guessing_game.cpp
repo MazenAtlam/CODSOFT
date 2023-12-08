@@ -1,9 +1,10 @@
-#define CLOSE 50
-#define HOT 10
+#define CLOSE 40
+#define HOT 5
 #define MIN -100	// the minimum number
-#define MAX 100 	// the maximum number
+#define MAX 100		// the maximum number
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -16,13 +17,15 @@ using namespace std;
  */
 int main(void)
 {
-	int n, rnum = MIN + (rand() % (MAX - MIN + 1));
-	bool first_guess, play_again = false;
+	int n, rnum, play_again = 0;
+	bool first_guess;
 
 	cout << "Welcome to NUMBER GUESSING GAME" << endl;
 	do
 	{
 		first_guess = true;
+		srand((unsigned) time(NULL));
+		rnum = MIN + (rand() % (MAX - MIN + 1));
 		cout << "Let's go!\nI have a number, try to guess it" << endl;
 		cout << "Number range is [" << MIN << " : " << MAX << "]" << endl;
 		do
@@ -46,7 +49,7 @@ int main(void)
 			else if (n < rnum)
 			{
 				if ((n + CLOSE) < rnum)
-                                        cout << "You are too high" << endl;
+                                        cout << "You are too low" << endl;
                                 else if ((n + HOT) < rnum)
                                         cout << "You are still low, but closer!" << endl;
                                 else
@@ -54,8 +57,12 @@ int main(void)
 			}
 		} while (n != rnum);
 		cout << "Congratulations, that's the right guess!" << endl;
-		cout << "Enter 0 if you want to exit or a non-zero value to play again: ";
-		cin >> play_again;
+		do
+		{
+			cout << "\nEnter 0 if you want to exit or 1 to play again:\n"
+				<< "Note: Any other value is not acceptable.\n";
+			cin >> play_again;
+		} while (play_again != 0 && play_again != 1);
 	} while (play_again);
 
 	return 0;

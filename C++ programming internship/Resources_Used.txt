@@ -1,6 +1,7 @@
 Task 1:
 - C++ functions to generate random:
-	https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/
+	1. https://www.digitalocean.com/community/tutorials/random-number-generator-c-plus-plus
+	2. https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/
 - An Algorithm to make the function rand() get negative and positive numbers
 	https://www.sololearn.com/Discuss/1066086/how-can-i-generate-random-numbers-between-a-negative-and-positive-value
 

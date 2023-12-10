@@ -51,8 +51,12 @@ int main(void)
 			}
 			board[i - 1][j - 1] = ch[player - 1];
 		}
-		cout << "Enter 0 if you want to exit or a non-zero value to play again: ";
-		cin >> play_again;
+		do
+		{
+			cout << "\nEnter 0 if you want to exit or 1 to play again:\n"
+				<< "Note: Any other value is not acceptable.\n";
+			cin >> play_again;
+		} while (play_again != 0 && play_again != 1);
 	} while (play_again);
 
 	return 0;
